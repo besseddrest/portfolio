@@ -33,6 +33,12 @@ module.exports = {
         test: /\.scss$/,
         include: path.join(__dirname, 'client'),
         loader: 'style-loader!css-loader!sass-loader'
+      },
+      // images
+      {
+        test: /\.(png|jpg)$/,
+        include: path.join(__dirname, 'client'),
+        loader: 'url-loader?limit=8192&name=images/[name].[ext]'
       }
     ]
   }

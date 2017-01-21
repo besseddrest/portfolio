@@ -1,5 +1,100 @@
 @import "~normalize.css";
 
 body {
+  font-family: "Arvo", sans-serif;
+  color: #4f0907;
+  background: #ff5f69;
+}
 
+#app {
+ width: 90vw;
+ margin: 0 auto;
+}
+
+.section {
+  &--header {
+    margin-bottom: 0;
+    font-size: 40px;
+    font-weight: 700;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.2);
+
+    &__h1 {
+      color: #4f0907;
+    }
+
+    &__sub {
+      display: inline-block;
+      padding: 0 10px;
+      color: #fff;
+      font-size: 14px;
+    }
+  }
+}
+
+.links {
+  &--list {
+    margin: 0;
+    padding: 0;
+  }
+
+  &--item {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: normal;
+  }
+
+  &--link {
+    color: #fff;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.project {
+  flex: 0 1 300px;
+  margin-bottom: 15px;
+  position: relative;
+  background: white;
+  border: 1px solid dimgray;
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+  transition: all .5s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &--details {
+    padding: 15px 15px 45px;
+  }
+
+  &--thumb {
+    width: 100%;
+  }
+
+  &--name {
+    margin: 0;
+  }
+
+  &--short-desc {
+    display: block;
+  }
+
+  &--links {
+    display: block;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    text-decoration: none;
+  }
 }

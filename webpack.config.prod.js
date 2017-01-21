@@ -9,7 +9,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'bundle.js',
-    publicPath: '/static/'
+    publicPath: '/'
   },
   plugins: [
     new webpack.optimize.OccurenceOrderPlugin(),
@@ -30,18 +30,24 @@ module.exports = {
   ],
   module: {
     loaders: [
-    // js
-    {
-      test: /\.js$/,
-      loaders: ['babel'],
-      include: path.join(__dirname, 'client')
-    },
-    // CSS
-    {
-      test: /\.scss$/,
-      include: path.join(__dirname, 'client'),
-      loader: 'style-loader!css-loader!sass-loader'
-    }
+      // js
+      {
+        test: /\.js$/,
+        loaders: ['babel'],
+        include: path.join(__dirname, 'client')
+      },
+      // CSS
+      {
+        test: /\.scss$/,
+        include: path.join(__dirname, 'client'),
+        loader: 'style-loader!css-loader!sass-loader'
+      },
+      // images
+      {
+        test: /\.(png|jpg)$/,
+        include: path.join(__dirname, 'client'),
+        loader: 'url-loader?limit=8192&name=images/[name].[ext]'
+      }
     ]
   }
 };

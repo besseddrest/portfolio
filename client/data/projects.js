@@ -6,7 +6,7 @@ const projects = [
     url: 'http://lowbicycles.com/',
     github: 'https://github.com/besseddrest/lowbicycles.com',
     tags: ['drupal', 'cms', 'php', 'bootstrap', 'css'],
-    thumb: ''
+    thumb: 'lowbicycles'
   },
   {
     name: "Danny Coyle's Super Chargers",
@@ -15,7 +15,7 @@ const projects = [
     url: 'http://dcsuperchargers.com/',
     github: '',
     tags: ['drupal', 'cms', 'php', 'bootstrap', 'css'],
-    thumb: ''
+    thumb: 'dcsuperchargers'
   },
   {
     name: 'SquareTrade',
@@ -24,16 +24,16 @@ const projects = [
     url: 'http://www.squaretrade.com/',
     github: '',
     tags: ['drupal', 'cms', 'php', 'javascript', 'mvc', 'angular'],
-    thumb: ''
+    thumb: 'squaretrade'
   },
   {
-    name: 'Hoodline',
+    name: 'Haroldline',
     shortDesc: 'Re-creating the Hoodline Blog with React & Redux',
     longDesc: "I re-created the main part of Hoodline's blog in React & Redux as a small presentation during the interview process.",
     url: '',
     github: 'https://github.com/besseddrest/hoodline-blog',
     tags: ['cms', 'blog', 'javascript', 'react', 'redux'],
-    thumb: ''
+    thumb: 'haroldline'
   },
   {
     name: 'ToDo',
@@ -42,7 +42,7 @@ const projects = [
     url: 'http://besseddrest.com/todo',
     github: 'https://github.com/besseddrest/todo-app',
     tags: ['todo', 'javascript', 'es6', 'sass', 'flexbox'],
-    thumb: ''
+    thumb: 'todo'
   },
   {
     name: 'Lightbox',
@@ -51,7 +51,7 @@ const projects = [
     url: 'http://besseddrest.com/lightbox',
     github: 'https://github.com/besseddrest/lightbox-app',
     tags: ['lightbox', 'javascript', 'es6', 'sass', 'flexbox'],
-    thumb: ''
+    thumb: 'lightbox'
   },
   {
     name: 'Tic Tac Toe',
@@ -60,16 +60,25 @@ const projects = [
     url: '',
     github: 'https://github.com/besseddrest/tic-tac-toe',
     tags: ['tictactoe', 'javascript', 'react'],
-    thumb: ''
+    thumb: 'tictactoe'
   },
   {
-    name: '',
-    shortDesc: '',
+    name: 'Animated Gifs',
+    shortDesc: 'A simple ReactJS app that connects to the Giphy API.',
+    longDesc: "This was part of a coding challenge for a job interview. The basic setup of the code was written by the unnamed company. My responsibilities included connecting to the Giphy API and creating a user experience where they could preview search results and drag and drop their selections into one of four drop zones.",
+    url: '',
+    github: 'https://github.com/besseddrest/animated-gif-app',
+    tags: [],
+    thumb: 'giphy'
+  },
+  {
+    name: 'Spotify Artist Search',
+    shortDesc: 'A simple app in ReactJS that connects to the Spotify API.',
     longDesc: "",
     url: '',
-    github: '',
-    tags: [],
-    thumb: ''
+    github: 'https://github.com/besseddrest/spotify-api-app',
+    tags: ['spotify', 'react', 'javascript', 'es6'],
+    thumb: 'spotify'
   }
 ];
 
