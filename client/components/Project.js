@@ -7,10 +7,11 @@ class Project extends Component {
 
   render() {
     const { item }  = this.props,
-          url = <a href={ item.url } target="_blank">demo</a>,
-          github = <a href={ item.github } target="_blank">github</a>,
           path = require(`../images/${ item.thumb }.jpg`);
-          
+
+    const url = item.url ? <a href={ item.url } target="_blank">demo</a> : null;
+    const github = item.github ? <a href={ item.github } target="_blank">github</a> : null;
+
     return (
       <div className="project">
         <img className="project--thumb" src={ path } />
