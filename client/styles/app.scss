@@ -2,8 +2,8 @@
 
 body {
   font-family: "Arvo", sans-serif;
-  color: #4f0907;
-  background: #ff5f69;
+  color: gold;
+  background: royalblue;
 }
 
 #app {
@@ -19,13 +19,13 @@ body {
     text-shadow: 2px 2px 0px rgba(0,0,0,0.2);
 
     &__h1 {
-      color: #4f0907;
+      color: gold;
     }
 
     &__sub {
       display: inline-block;
       padding: 0 10px;
-      color: #fff;
+      color: white;
       font-size: 14px;
     }
   }
@@ -45,7 +45,7 @@ body {
   }
 
   &--link {
-    color: #fff;
+    color: white;
     text-decoration: none;
 
     &:hover {
